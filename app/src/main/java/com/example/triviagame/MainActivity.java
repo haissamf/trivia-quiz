@@ -141,7 +141,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     public void answered( boolean correct){
         if ( correct) {
-            Toast.makeText(MainActivity.this, " نجم!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(MainActivity.this, " correct! :)", Toast.LENGTH_SHORT).show();
             correctAnimation();
             currentIndex++;
 
@@ -156,7 +156,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
 
         else {
-            Toast.makeText(MainActivity.this, "غلط يسطا!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(MainActivity.this, "wrong! :(", Toast.LENGTH_SHORT).show();
             wrongAnimation();
             //important to update for the ViewCard to repaint
             gotWrong = true;
